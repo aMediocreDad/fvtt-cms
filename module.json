@@ -3,8 +3,12 @@
 	"title": "Foundry VTT CMS",
 	"description": "A module for managing content in Foundry VTT.",
 	"author": "aMediocreDev",
+	"readme": "https://raw.githubusercontent.com/aMediocreDad/fvtt-cms/main/README.md",
+	"license": "https://raw.githubusercontent.com/aMediocreDad/fvtt-cms/main/LICENSE",
 	"version": "1.0.0",
 	"minimumCoreVersion": "9",
 	"esmodules": ["index.js"],
-	"styles": ["style.css"]
+	"styles": ["style.css"],
+	"manifest": "https://raw.githubusercontent.com/aMediocreDad/fvtt-cms/main/module.json",
+	"download": "https://github.com/aMediocreDad/fvtt-cms/archive/refs/heads/main.zip"
 }
