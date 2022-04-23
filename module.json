@@ -1,0 +1,10 @@
+{
+	"name": "fvtt-cms",
+	"title": "Foundry VTT CMS",
+	"description": "A module for managing content in Foundry VTT.",
+	"author": "aMediocreDev",
+	"version": "1.0.0",
+	"minimumCoreVersion": "9",
+	"esmodules": ["index.js"],
+	"styles": ["style.css"]
+}
