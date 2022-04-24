@@ -12,16 +12,18 @@ Hooks.on("init", () => {
 
 Hooks.on("ready", () => {
 	const modal = document.createElement("div");
+	const buttons = `<div id="fvtt-cms-content">
+			<button id="fvtt-cms-tab-export">Export Journals</button>
+			<button id="fvtt-cms-tab-import">Import Journals</button>
+			<button id="fvtt-cms-tab-clean">Clean Journal Directory</button>
+		</div>
+	`;
 	modal.id = "fvtt-cms-container";
-	modal.innerHTML = `
-	<div id="fvtt-cms-header">
+	modal.innerHTML = `<div id="fvtt-cms-header">
 		<h2>FVTT Content Management System</h2>
-	</div>
-	<div id="fvtt-cms-content">
-		<button id="fvtt-cms-tab-export">Export Journals </button>
-		<button id="fvtt-cms-tab-import">Import Journals</button>
-		<button id="fvtt-cms-tab-clean">Clean Journal Directory</button>
-	</div>`;
+		</div>
+		${!!window.chrome ? buttons : "<p>This module only works in Chromium-based browsers (e.g. Chrome, Edge, Brave).</p>"}
+	`;
 	document.body.appendChild(modal);
 	modal.addEventListener("click", (e) => {
 		if (e.target.id === "fvtt-cms-tab-import") {
