@@ -25,7 +25,7 @@ jobs:
         with:
           file: module.json
           field: download
-          value: https://github.com/aMediocreDad/fvtt-cms/releases/${{ steps.version.outputs.tag }}.zip/download/module.zip
+          value: https://github.com/aMediocreDad/fvtt-cms/releases/download/${{ steps.version.outputs.tag }}/module.zip
       - name: Create Zipped Artifact
         run: |
           zip -r module.zip . -x '*.git*'
