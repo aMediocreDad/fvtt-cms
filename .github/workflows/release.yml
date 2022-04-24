@@ -20,6 +20,12 @@ jobs:
       - name: Get Version Tag
         id: version
         uses: ncipollo/semantic-version-action@v1
+      - name: Set version in module.json
+        uses: jossef/action-set-json-field@v1
+        with:
+          file: module.json
+          field: download
+          value: https://github.com/aMediocreDad/fvtt-cms/releases/${{ steps.version.outputs.tag }}.zip/download/module.zip
       - name: Create Zipped Artifact
         run: |
           zip -r module.zip . -x '*.git*'
