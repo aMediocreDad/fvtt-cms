@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.5](https://github.com/aMediocreDad/fvtt-cms/compare/v1.1.4...v1.1.5) (2022-04-30)
+
+
+### Bug Fixes
+
+* versioning ([daa65b2](https://github.com/aMediocreDad/fvtt-cms/commit/daa65b27a142c9d1bc1e3acd1e94c6b09134f6d5))
+
 ### [1.1.4](https://github.com/aMediocreDad/fvtt-cms/compare/v1.1.3...v1.1.4) (2022-04-30)
 
 ### [1.1.3](https://github.com/aMediocreDad/fvtt-cms/compare/v1.1.2...v1.1.3) (2022-04-24)
