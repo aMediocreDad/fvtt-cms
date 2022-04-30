@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/aMediocreDad/fvtt-cms/compare/v1.1.5...v1.2.0) (2022-04-30)
+
+
+### Features
+
+* Add confirmation Dialog to clean button ([3b463b7](https://github.com/aMediocreDad/fvtt-cms/commit/3b463b72f7c61bd4c3eef1b00b73cf9960ddb14f))
+
 ### [1.1.5](https://github.com/aMediocreDad/fvtt-cms/compare/v1.1.4...v1.1.5) (2022-04-30)
 
 

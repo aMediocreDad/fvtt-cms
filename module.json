@@ -6,7 +6,7 @@
 	"readme": "https://raw.githubusercontent.com/aMediocreDad/fvtt-cms/main/README.md",
 	"license": "https://raw.githubusercontent.com/aMediocreDad/fvtt-cms/main/LICENSE",
 	"changelog": "https://raw.githubusercontent.com/aMediocreDad/fvtt-cms/main/CHANGELOG.md",
-	"version": "1.1.5",
+	"version": "1.2.0",
 	"minimumCoreVersion": 9,
 	"esmodules": ["index.js"],
 	"styles": ["style.css"],
