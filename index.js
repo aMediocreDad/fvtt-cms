@@ -25,13 +25,17 @@ Hooks.on("ready", () => {
 		${!!window.chrome ? buttons : "<p>This module only works in Chromium-based browsers (e.g. Chrome, Edge, Brave).</p>"}
 	`;
 	document.body.appendChild(modal);
-	modal.addEventListener("click", (e) => {
-		if (e.target.id === "fvtt-cms-tab-import") {
-			importHTMLToJournal();
-		} else if (e.target.id === "fvtt-cms-tab-export") {
-			writeJournals();
-		} else if (e.target.id === "fvtt-cms-tab-clean") {
-			clean();
+	modal.addEventListener("click", async (e) => {
+		if (e.target.id === "fvtt-cms-tab-import") importHTMLToJournal();
+		else if (e.target.id === "fvtt-cms-tab-export") writeJournals();
+		else if (e.target.id === "fvtt-cms-tab-clean") {
+			await Dialog.confirm({
+				title: "Clean Journal Directory",
+				content: "<p>Are you sure you want to delete all journals in the Journal tab? <strong>This cannot be undone.</strong></p>",
+				defaultYes: false,
+				yes: () => clean(),
+				no: () => ui.notifications.warn("Aborted cleaning journal directory."),
+			});
 		}
 	});
 });
